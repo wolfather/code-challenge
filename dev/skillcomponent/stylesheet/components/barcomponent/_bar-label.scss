@@ -1,0 +1,10 @@
+.bar-label{
+	text-transform: uppercase
+}
+
+
+@media #{$small-only} {
+	.bar-label{
+		text-align: right
+	}
+}

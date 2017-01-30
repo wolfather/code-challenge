@@ -1,0 +1,12 @@
+section.list-info
+	.column
+		.columns.small-12.large-3.list-info-date
+			span.list-info-date-month {{:: month }}
+			span.list-info-date-year {{:: year }}
+
+		.columns.small-12.large-9.list-info-info
+			hgroup.list-info-info-hgroup
+				h4.list-info-info-hgroup-title {{:: name }}
+				h5.list-info-info-hgroup-subtitle {{:: subname }}
+
+			article.list-info-info-description {{:: description }}

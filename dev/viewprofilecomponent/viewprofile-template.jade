@@ -1,0 +1,89 @@
+.view-profile
+	section
+		div
+			section.medium-12.large-6.columns.view-profile-section-personal
+				div(cardcomponent
+					cardimage="dados.thumb"
+					cardname="dados.name"
+					cardprofession="dados.profession")
+				
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.profile.title")
+					article {{:: dados.profile.description }}
+				
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.objective.title")
+					article {{:: dados.objective.description }}
+
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.personalSkill.title")
+					ul.column.medium-10.large-12
+						li(ng-repeat="( key, value ) in dados.personalSkill | filterTitle track by $index" 
+							skillbarcomponent
+							label="key"
+							value="value")
+
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.contactMe.title")
+					
+					.vcard-contact
+						address.vcard-contact-address {{:: dados.contactMe.address}}
+						.vcard-contact-tel
+							a(href="tel:{{:: dados.contactMe.tel}}") {{:: dados.contactMe.tel}}
+
+						.vcard-contact-email
+							a(href="mailto:{{:: dados.contactMe.email}}") {{:: dados.contactMe.email}}
+
+						.vcard-contact-website
+							a(href="{{:: dados.contactMe.webSite}}") {{:: dados.contactMe.webSite}}
+
+
+			section.medium-12.large-6.columns.view-profile-section-professional
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.education.title")
+
+					div(ng-repeat="e in dados.education.university track by $index" 
+						listcomponent 
+						month="e.month"
+						year="e.year"
+						name="e.courseName"
+						subname="e.universityName"
+						description="e.description")
+
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.experience.title")
+					
+					div(ng-repeat="e in dados.experience.company | filterTitle track by $index"
+						listcomponent 
+						month="e.month"
+						year="e.year"
+						name="e.roleName"
+						subname="e.companyName"
+						description="e.description")
+				
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.professionalSkill.title")
+					
+					ul.column.medium-10.large-12
+						li(ng-repeat="key in dados.professionalSkill.tools | filterTitle track by $index" 
+							skillbarcomponent
+							label="key.toolName"
+							value="key.toolsSkill")
+
+				section.view-profile-section
+					div(titlecomponent 
+						titletext="dados.award.title")
+
+					div(listcomponent 
+						month="dados.award.month"
+						year="dados.award.year"
+						name="dados.award.awardName"
+						subname="dados.award.projectName"
+						description="dados.award.description")

@@ -1,0 +1,14 @@
+.bar-outter{
+	position: relative;
+	float: right;
+	width: $barOutterWidth;
+	background: $barOutterBgColor;
+	height: 20px
+}
+.bar-inner{
+	position: absolute;
+	height: 20px;
+	top: 0;
+	left: 0;
+	background: #fc0
+}

@@ -1,0 +1,59 @@
+@import '../bower_components/foundation/scss/normalize',
+	'../bower_components/foundation/scss/foundation',
+	'assets/stylesheet/reset',
+	url('https://fonts.googleapis.com/css?family=Open+Sans'),
+	'viewprofilecomponent/viewprofile.style',
+	'cardprofilecomponent/cardprofile.style',
+	'titlecomponent/title.style',
+	'listcomponent/list.style',
+	'skillcomponent/skill.style';
+
+
+$colorTypeB: #49c5b1;
+$colorTypeA: #fff;
+body{}
+ul, ol {list-style: none}
+
+.view-profile-section{
+	clear: both;
+	margin-top: 2.275rem
+}
+
+
+@media screen and (max-width: 480px) {
+	.view-profile-section-personal,
+	.view-profile-section-professional{
+		
+	}
+}
+
+@media screen and (min-width: 481px) {
+	.view-profile-section-personal,
+	.view-profile-section-professional{
+
+	}
+}
+
+
+.view-profile-section-personal{
+	background: $colorTypeB;
+	color: $colorTypeA;
+}
+
+.view-profile-section-professional{
+	right: 0;
+	background: $colorTypeA;
+	color: #000;
+
+	.view-profile-title{
+		color: $colorTypeB;
+	}
+}
+
+/**THEMES**/
+.text-type-a{
+	color: $colorTypeA;
+}
+.text-type-b{
+	color: $colorTypeB;
+}

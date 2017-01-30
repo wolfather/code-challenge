@@ -1,0 +1,32 @@
+.view-profile-title{
+	margin-bottom: 1.575rem;
+	line-height: 1;
+	font-size: 1.95em;
+	text-transform: uppercase;
+	color: #fff;
+}
+.view-profile-subtitle{
+	font-size: 1.468em;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+@media #{$small} {
+	.view-profile-title{
+		padding-left: 0;
+		text-align: center;
+	}
+}
+@media #{$medium} {
+	.view-profile-title{
+		padding-left: 0;
+		text-align: center;
+	}
+}
+
+@media #{$large} {
+	.view-profile-title{
+		padding-left: 110px;
+	}
+}
+
