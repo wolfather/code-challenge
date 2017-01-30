@@ -14,4 +14,3 @@
 - rodar o comando: npm i;
 - rodar o comando: npm start;
 - Abrir o navegador (IE >= 10) no endereço: "http://192.168.1.100:8080/";
-
