@@ -1,8 +1,8 @@
 {
   "name": "code-challenge",
   "version": "1.0.1",
-  "description": "Para o teste, pedimos que seja entrega em até 3 dias, mas de acordo com a experiência e/ou ferramentas escolhidas por você, talvez precise de mais tempo para concluir o desafio, nos avise!",
-  "main": "index.js",
+  "description": "Get API response from server and showing with angular and microcomponents.",
+  "main": "public/index.html",
   "scripts": {
     "install": "npm i && bower i",
     "postinstall": "gulp",
@@ -11,17 +11,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/b2w-marketplace/code-challenge.git"
+    "url": "git+https://github.com/wolfather/code-challenge.git"
   },
   "keywords": [
-    "angularjs"
+    "angularjs",
+    "API",
+    "microcomponents"
   ],
   "author": "israel <so.israelweb@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/b2w-marketplace/code-challenge/issues"
+    "url": "https://github.com/wolfather/code-challenge/issues"
   },
-  "homepage": "https://github.com/b2w-marketplace/code-challenge#readme",
+  "homepage": "https://github.com/wolfather/code-challenge#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-compass": "^2.1.0",
@@ -33,6 +35,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
+    "gulp-strip-comments": "^2.4.3",
     "gulp-svg-sprite": "^1.3.6",
     "gulp-uglify": "^1.5.1",
     "gulp-watch": "^4.3.11",
@@ -47,6 +50,7 @@
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.1.0",
     "karma-junit-reporter": "^1.2.0",
+    "pump": "^1.0.2",
     "supervisor": "^0.12.0"
   }
 }
